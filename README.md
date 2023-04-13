@@ -13,4 +13,4 @@ Using Holoviz panel with rlcard
 * [Training DQN on Gin Rummy](https://colab.research.google.com/github/billh0420/rlcard-colab/blob/main/Notebooks/Gin%20Rummy/DQNAgent/Gin_Rummy_DQNAgent.ipynb)
 
 
-* [Using panel with rlcard](https://colab.research.google.com/github/billh0420/rlcard-colab/blob/main/Gin_Rummy_World/GinRummy230409.ipynb)
+* [Using panel with rlcard](https://colab.research.google.com/github/billh0420/panel-demo/blob/main/Gin_Rummy_World/GinRummy230409.ipynb)
