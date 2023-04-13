@@ -9,8 +9,8 @@ Using Holoviz panel with rlcard
 <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 
 
-### Links to Colab
-* [Training DQN on Gin Rummy](https://colab.research.google.com/github/billh0420/rlcard-colab/blob/main/Notebooks/Gin%20Rummy/DQNAgent/Gin_Rummy_DQNAgent.ipynb)
-
+### Links to open notebook in Colab
 
 * [Using panel with rlcard](https://colab.research.google.com/github/billh0420/panel-demo/blob/main/Gin_Rummy_World/GinRummy230409.ipynb)
+
+* [Demo for some features of Holoviz panel](https://colab.research.google.com/github/billh0420/panel-demo/blob/main/Gin_Rummy_World/Demo%20Panel.ipynb)
