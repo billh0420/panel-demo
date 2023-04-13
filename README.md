@@ -1,5 +1,4 @@
-# panel-demo
-Using Holoviz panel with rlcard
+# Using Holoviz panel with rlcard
 
 ### Links to open notebook in Colab
 
