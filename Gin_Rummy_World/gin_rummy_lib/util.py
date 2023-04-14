@@ -8,7 +8,6 @@ from pytz import timezone
 
 import re # regular expression
 
-#import rlcard
 import rlcard.games.gin_rummy.utils.utils as gin_rummy_utils
 
 from rlcard.games.base import Card
