@@ -8,7 +8,7 @@ class TrainingResultsWindow(pn.Column):
 
     def __init__(self, world: World):
         super().__init__()
-        self.world = world
+        self.agent_dir = world.agent_dir
         self.log_view = self.get_log_view()
         self.fig_view = self.get_fig_view()
         self.performance_view = self.get_performance_view()
@@ -27,7 +27,7 @@ class TrainingResultsWindow(pn.Column):
         self.width_policy = 'max'
     
     def get_log_view(self):
-        file_path = f'{self.world.agent_dir}/log.txt'
+        file_path = f'{self.agent_dir}/log.txt'
         if not os.path.exists(file_path):
             log_view = pn.pane.Str("No log text")
             return log_view
@@ -40,7 +40,7 @@ class TrainingResultsWindow(pn.Column):
         return log_view
     
     def get_fig_view(self):
-        file_path = f'{self.world.agent_dir}/fig.png'
+        file_path = f'{self.agent_dir}/fig.png'
         if not os.path.exists(file_path):
             fig_view = pn.pane.Str("No figure png")
             return fig_view
@@ -49,7 +49,7 @@ class TrainingResultsWindow(pn.Column):
         return fig_view
     
     def get_performance_view(self):
-        file_path = f'{self.world.agent_dir}/performance.csv'
+        file_path = f'{self.agent_dir}/performance.csv'
         if not os.path.exists(file_path):
             performance_view = pn.pane.Str("No performance csv")
             return performance_view

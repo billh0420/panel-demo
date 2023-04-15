@@ -49,7 +49,7 @@ class WorldRLTrainerSettingsView(param.Parameterized):
             | num_eval_games | {config.num_eval_games} | {defaultConfig.num_eval_games} |
             | evaluate_every | {config.evaluate_every} | {defaultConfig.evaluate_every} |
             """)
-        return pn.Column(title, body)
+        return pn.Column(title, body, sizing_mode = 'stretch_width')
     
     def update(self):
         world = self.world

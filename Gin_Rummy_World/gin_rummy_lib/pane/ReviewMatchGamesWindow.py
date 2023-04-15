@@ -1,10 +1,10 @@
 import panel as pn
 
 from World import World
-from ReviewPlayWindow import ReviewPlayWindow
-from DQNAgentPane import DQNAgentPane
-from TrainerPane import TrainerPane
-from GameSettingsPane import GameSettingsPane
+from pane.ReviewPlayWindow import ReviewPlayWindow
+from pane.DQNAgentPane import DQNAgentPane
+from pane.TrainerPane import TrainerPane
+from pane.GameSettingsPane import GameSettingsPane
 
 class ReviewMatchGamesWindow(pn.Tabs):
 
