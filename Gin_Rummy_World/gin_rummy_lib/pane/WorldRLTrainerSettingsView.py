@@ -3,7 +3,7 @@ import param
 
 from World import World
 from RLTrainerConfig import RLTrainerConfig
-from TrainerPane import TrainerPane
+from pane.TrainerPane import TrainerPane
 
 class WorldRLTrainerSettingsView(param.Parameterized):
 
