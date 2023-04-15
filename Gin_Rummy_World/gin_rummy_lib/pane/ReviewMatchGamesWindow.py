@@ -13,7 +13,14 @@ class ReviewMatchGamesWindow(pn.Tabs):
         self.world = world
         self.append(('Review', ReviewPlayWindow(world=self.world)))
         self.append(('DQNAgent', DQNAgentPane(world=self.world)))
-        self.append(('Trainer', TrainerPane(world=self.world)))
+        self.append(('Trainer', self.trainer_view))
         self.append(('GameSettings', GameSettingsPane(world=self.world)))
         self.dynamic = True
         self.height = 800
+
+    @property
+    def trainer_view(self):
+        trainer_title = pn.pane.Markdown("# RL Trainer Settings")
+        trainer_pane = TrainerPane(world=self.world)
+        trainer_view = pn.Column(trainer_title, trainer_pane, sizing_mode = 'stretch_width')
+        return trainer_view

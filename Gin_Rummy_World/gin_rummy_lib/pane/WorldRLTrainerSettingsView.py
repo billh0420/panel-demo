@@ -3,16 +3,9 @@ import param
 
 from World import World
 from RLTrainerConfig import RLTrainerConfig
+from TrainerPane import TrainerPane
 
 class WorldRLTrainerSettingsView(param.Parameterized):
-
-    css = """
-        div.special_table + table * {
-            width: 33%;
-            border: 1px solid red;
-            padding:10px;
-        }
-    """
 
     max_num_episodes = 20000
     max_num_eval_games = 100
@@ -40,15 +33,7 @@ class WorldRLTrainerSettingsView(param.Parameterized):
         defaultConfig = RLTrainerConfig()
         config = self.world.rl_trainer_config
         title = pn.pane.Markdown(f'### RL Trainer Settings')
-        body = pn.pane.Markdown(f"""
-            <div class="special_table"></div>
-            | Name | Value | Default |
-            | :--: | :--: | :--: |
-            | algorithm | {config.algorithm} | {defaultConfig.algorithm} |
-            | num_episodes | {config.num_episodes} | {defaultConfig.num_episodes} |
-            | num_eval_games | {config.num_eval_games} | {defaultConfig.num_eval_games} |
-            | evaluate_every | {config.evaluate_every} | {defaultConfig.evaluate_every} |
-            """)
+        body = TrainerPane(world=self.world)
         return pn.Column(title, body, sizing_mode = 'stretch_width')
     
     def update(self):
