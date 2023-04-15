@@ -4,7 +4,7 @@ import param
 from rlcard.games.gin_rummy.utils.settings import Setting
 
 from World import World
-from GameSettingsPane import GameSettingsPane
+from pane.GameSettingsPane import GameSettingsPane
 
 class WorldGameSettingsView(param.Parameterized):
 
