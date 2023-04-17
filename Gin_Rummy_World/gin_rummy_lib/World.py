@@ -76,6 +76,11 @@ class World:
             result = world_game_settings_dicts[0]
         return result
     
+    def get_game_num_actions(self) -> int:
+        game = self.make_game()
+        num_actions = game.get_num_actions()
+        return num_actions
+
     def make_game(self) -> GinRummyGame:
         game = GinRummyGame()
         settings = Settings()
