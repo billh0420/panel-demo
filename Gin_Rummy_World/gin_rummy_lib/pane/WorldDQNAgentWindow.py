@@ -4,7 +4,7 @@ import torch
 from rlcard.games.gin_rummy.game import GinRummyGame
 from rlcard.agents import DQNAgent
 
-from DQNAgentPane import DQNAgentPane
+from pane.DQNAgentPane import DQNAgentPane
 from World import World
 from util import to_int_list
 
