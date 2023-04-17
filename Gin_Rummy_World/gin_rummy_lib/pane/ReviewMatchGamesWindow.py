@@ -19,7 +19,7 @@ class ReviewMatchGamesWindow(pn.Tabs):
 
     def dqn_agent_view(self, world):
         title = pn.pane.Markdown("# DQN Agent Settings")
-        dqn_agent_pane = DQNAgentPane(world=world)
+        dqn_agent_pane = DQNAgentPane(dqn_agent=world.agent)
         dqn_agent_view = pn.Column(title, dqn_agent_pane)
         dqn_agent_view.width_policy = 'max'
         return dqn_agent_view
