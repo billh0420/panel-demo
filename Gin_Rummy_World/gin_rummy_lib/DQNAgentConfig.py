@@ -13,7 +13,7 @@ class DQNAgentConfig:
         self.batch_size=128 #32
         self.train_every=10 #1
         self.learning_rate=0.00005 #0.00005
-        self.num_actions=2
+        self.num_actions=110
         self.state_shape = [5, 52]
         self.mlp_layers = [128, 128, 128]  # [128, 128, 128] # [64, 64, 64] # [64, 64]
         self.model_name='dqn_agent'
